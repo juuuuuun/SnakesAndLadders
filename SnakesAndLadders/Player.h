@@ -16,8 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSInteger currentSquare;
 @property (nonatomic, strong) NSDictionary<NSNumber*, NSNumber*>* gameLogic;
 @property (nonatomic) BOOL gameOver;
+@property (nonatomic, strong) NSString* name;
 
 -(void) roll;
+-(NSString *) score;
 
 @end
 

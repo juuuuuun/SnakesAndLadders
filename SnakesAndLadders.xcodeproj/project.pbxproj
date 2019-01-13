@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C802151921EADEA4007C69F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C802151821EADEA4007C69F4 /* main.m */; };
 		C802152121EADFAF007C69F4 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C802152021EADFAF007C69F4 /* Player.m */; };
+		C802152421EAE5BF007C69F4 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C802152321EAE5BF007C69F4 /* PlayerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		C802151821EADEA4007C69F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C802151F21EADFAF007C69F4 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		C802152021EADFAF007C69F4 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		C802152221EAE5BF007C69F4 /* PlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		C802152321EAE5BF007C69F4 /* PlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				C802151821EADEA4007C69F4 /* main.m */,
 				C802151F21EADFAF007C69F4 /* Player.h */,
 				C802152021EADFAF007C69F4 /* Player.m */,
+				C802152221EAE5BF007C69F4 /* PlayerManager.h */,
+				C802152321EAE5BF007C69F4 /* PlayerManager.m */,
 			);
 			path = SnakesAndLadders;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				C802152121EADFAF007C69F4 /* Player.m in Sources */,
 				C802151921EADEA4007C69F4 /* main.m in Sources */,
+				C802152421EAE5BF007C69F4 /* PlayerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

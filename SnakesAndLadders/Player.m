@@ -40,26 +40,29 @@
 -(void)roll {
     int rollValue = arc4random_uniform(6)+1;
     self.currentSquare += rollValue;
-    NSLog(@"\nYou rolled a %i", rollValue);
-    NSLog(@"\nYou landed on %li", self.currentSquare);
+    NSLog(@"\n%@ rolled a %i", self.name, rollValue);
+    NSLog(@"\n%@ landed on %li", self.name, self.currentSquare);
     
     if(self.currentSquare >= 100) {
-        NSLog(@"\nYOU WIN!");
         self.gameOver = YES;
     }
     
     if( self.gameLogic[@(self.currentSquare)] != nil ) {
         NSInteger oldSpace = self.currentSquare;
-        self.currentSquare = [self.gameLogic[@(self.currentSquare)] integerValue];
+        self.currentSquare = self.gameLogic[@(self.currentSquare)].integerValue;
         if(oldSpace > self.currentSquare) {
             NSLog(@"\nLanded on snake!");
-            NSLog(@"\nYou fell from %li to %li", oldSpace, self.currentSquare);
+            NSLog(@"\n%@ fell from %li to %li", self.name, oldSpace, self.currentSquare);
         } else {
             NSLog(@"\nStairway to heaven!");
-            NSLog(@"\nYou jumped from %li to %li", oldSpace, self.currentSquare);
+            NSLog(@"\n%@ jumped from %li to %li", self.name, oldSpace, self.currentSquare);
         }
         
     }
+}
+
+- (NSString *)score {
+    return [NSString stringWithFormat:@"%@: %li", self.name, self.currentSquare];
 }
 
 @end
